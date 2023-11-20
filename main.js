@@ -35,19 +35,19 @@ function playerChoice() {
 // switch()
 
 function oneRound (playerSelection, computerSelection) {
-    playerSelection = playerChoice();
-    computerSelection = computerChoice();
     if (playerSelection == computerSelection) {
-        alert('Try again')
+        return 'sussy'
+        alert('Try again');
     } else if (computerSelection =='rock') {
-        return(playerSelection == 'paper') ? alert('hehe, you win!') : alert('awh, you lost')
+        return(playerSelection == 'paper') ? 'hehe, you win!' : 'awh, you lost'
     } else if (computerSelection == 'paper') {
-        return(playerSelection == 'scissors') ? alert('hehe, you win!') : alert('awh, you lost')
+        return(playerSelection == 'scissors') ? 'hehe, you win!' : 'awh, you lost'
     } else if (computerSelection == 'scissors') {
-        return(playerSelection == 'rock') ? alert('hehe, you win!') : alert('awh, you lost')
-    } else {
-        alert('it is a tie')
-    }
-    console.log(oneRound())
+        return(playerSelection == 'rock') ? 'hehe, you win!' : 'awh, you lost'
+    } 
 }
-oneRound()
+
+const playerSelection = playerChoice();
+const computerSelection = computerChoice();
+console.log(oneRound(playerSelection, computerSelection));
+
