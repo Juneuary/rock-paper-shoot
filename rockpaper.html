@@ -6,42 +6,41 @@
 
     </head>
     <body>
-        <button onclick ="boxPrompt">let's play a game</button>
+        <button onclick ="boxPrompt">let's play a game!</button>
     </body>
-    <script>
+    <script src="main.js">
 
+        
 
-
-        // generates random output from array 
+        // // generates random output from array 
         
        
-        // function that will output string from array randomly which will be considered Computer's choice in game
-        let choices = ["rock", "paper", "scissors"]
-        // sanity check
-        console.log('tester for choices' + choices)
-        function computerChoice() {
+        // // function that will output string from array randomly which will be considered Computer's choice in game
+        // let choices = ["rock", "paper", "scissors"]
+        // // sanity check
+        // console.log('tester for choices' + choices)
+        // function computerChoice() {
             
-	        let randomIndex = Math.floor(Math.random() * choices.length);
-            let randomChoice = choices[randomIndex];
-            return randomChoice
-        }
-        console.log('tester for computer' + computerChoice())
-        // window prompt where user inputs their choice 
-        function boxPrompt() {
-            let mychoice = prompt("choose your fighter", "rock, paper, or scissors").toLowerCase()
-            if (mychoice == 'rock' || mychoice == 'scissors' || mychoice == 'paper' ) {
-                console.log(mychoice)
-                return mychoice
-            } else {
-                alert("That's a invalid choice")
-        }
-    }
-        console.log('sanity check for boxprompt' + boxPrompt())
+	    //     let randomIndex = Math.floor(Math.random() * choices.length);
+        //     let randomChoice = choices[randomIndex];
+        //     return randomChoice
+        // }
+        // console.log('tester for computer' + computerChoice())
+        // // window prompt where user inputs their choice 
+        // function boxPrompt() {
+        //     let mychoice = prompt("choose your fighter", "rock, paper, or scissors").toLowerCase()
+        //     if (mychoice == 'rock' || mychoice == 'scissors' || mychoice == 'paper' ) {
+        //         console.log(mychoice)
+        //         return mychoice
+        //     } else {
+        //         alert("That's a invalid choice")
+        // }
+        // }
+        // console.log('sanity check for boxprompt' + boxPrompt())
 
         
     
-            
-            
+       
        
             
               
@@ -50,7 +49,7 @@
 
 
         
-        // 
+    
     
  
 
