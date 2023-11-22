@@ -20,7 +20,8 @@ function playerChoice() {
 }
 
 
-
+const playerSelection = playerChoice();
+const computerSelection = computerChoice();
 function oneRound (playerSelection, computerSelection) {
     if (playerSelection == computerSelection) {
         return 'A draw!'
@@ -35,93 +36,28 @@ function oneRound (playerSelection, computerSelection) {
     
 }
 
-
-const playerSelection = playerChoice();
-const computerSelection = computerChoice();
-console.log(oneRound(playerSelection, computerSelection))
-
+console.log(oneRound('tester for oneRound(): ' + playerSelection, computerSelection))
 
 
 let playerCount = 0;
 let computerCount = 0;
-// for (let playerCount = 0; playerCount <= 5; playerCount++) {
 function game() {
-  if (console.log('you won ouput: ' + oneRound(playerSelection,computerSelection)) == 'hehe, you win') {
-    console.log(++playerCount);
-   
-  } else if (console.log('you lost output: ' + oneRound(playerSelection,computerSelection)) == 'awh, you lost') {
-    ++computerCount;
-    console.log(computerCount)
-  }
-}
-game()
-
-
-/*
-I want to create a game function that will keep track of player selection wins of 5 games
-I neeed a function that will keep track of player selection wins from 5 games and will run 5 times
-    keep track of wins
-        create a variable or function called player score and computer score
-        if 
-    run 5 times 
-
-create a function game
-call oneRound function
-if return is hehe you win, console.log
-else if return is awh you lost, console.log 
-console.log('n round: ' + result )
-switch(oneRound) {
-    case 'hehe you won':
-        ++playerscore
-        console.log(playerscore);
-        break;
-    case 'awh, you lost':
-        
-}
-
-a function that will play the game 5 times
-after each game, it will console log the winner
-*/ 
-console.log(oneRound(playerSelection, computerSelection))
-
-// function game() {
-//     switch(oneRound()) {
-//         case 'hehe, you win':
-//             console.log('nice');
-//             break;
-//         case 'awh, you lost':
-//             console.log('ok');
-//             break;
-//     }
-
-function game() {
-    oneRound;
+    const playerSelection = playerChoice();
+    const computerSelection = computerChoice();
+   const result = oneRound(playerSelection,computerSelection);
+  
     
+  if (result == 'hehe, you win') {
+     ++playerCount;
+     console.log('player score: ' + playerCount)
+  } else if (result  == 'awh, you lost') {
+    ++computerCount;
+    console.log('computerScore: '+ computerCount)
+  }
+  console.log('Result: ' + result)
 }
-
-/*
-I want to create a game function that will keep track of player selection wins of 5 games
-I neeed a function that will keep track of player selection wins from 5 games and will run 5 times
-    keep track of wins
-        create a variable or function called player score and computer score
-        if 
-    run 5 times 
-
-create a function game
-call oneRound function
-if return is hehe you win, console.log
-else if return is awh you lost, console.log 
-console.log('n round: ' + result )
-switch(oneRound) {
-    case 'hehe you won':
-        ++playerscore
-        console.log(playerscore);
-        break;
-    case 'awh, you lost':
-        
-}
-
-a function that will play the game 5 times
-after each game, it will console log the winner
-*/ 
-
+// for (let i = 0; i < 3; ++i){
+//     game()
+// }
+game()
+console.log('player: ' + playerCount + ', Computer: ' + computerCount)
