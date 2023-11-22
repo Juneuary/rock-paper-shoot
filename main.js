@@ -32,6 +32,7 @@ function oneRound (playerSelection, computerSelection) {
         return(playerSelection == 'rock') ? 'hehe, you win!' : 'awh, you lost'
     } 
     
+    
 }
 
 
@@ -55,6 +56,48 @@ function game() {
 }
 game()
 
+
+/*
+I want to create a game function that will keep track of player selection wins of 5 games
+I neeed a function that will keep track of player selection wins from 5 games and will run 5 times
+    keep track of wins
+        create a variable or function called player score and computer score
+        if 
+    run 5 times 
+
+create a function game
+call oneRound function
+if return is hehe you win, console.log
+else if return is awh you lost, console.log 
+console.log('n round: ' + result )
+switch(oneRound) {
+    case 'hehe you won':
+        ++playerscore
+        console.log(playerscore);
+        break;
+    case 'awh, you lost':
+        
+}
+
+a function that will play the game 5 times
+after each game, it will console log the winner
+*/ 
+console.log(oneRound(playerSelection, computerSelection))
+
+// function game() {
+//     switch(oneRound()) {
+//         case 'hehe, you win':
+//             console.log('nice');
+//             break;
+//         case 'awh, you lost':
+//             console.log('ok');
+//             break;
+//     }
+
+function game() {
+    oneRound;
+    
+}
 
 /*
 I want to create a game function that will keep track of player selection wins of 5 games
